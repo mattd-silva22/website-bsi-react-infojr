@@ -1,0 +1,91 @@
+@import"../../styles/variables.scss";
+
+#main-navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: $primary-blue;
+    font-size: 1.8rem;
+    color: $light-white;
+
+    padding: 1.0rem 0;
+
+    #main-navbar-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 90%;
+        max-width: 1280px;
+        
+
+        ul {
+            display: flex;
+
+            list-style: none;
+            gap: 18.4rem;
+            @media(max-width:1280px){
+                gap: 9.2rem;
+                
+            }
+
+            @media(max-width:1020px){
+                gap: 5.2rem;
+                a {
+                    font-size: 1.8rem;
+
+                    
+                }
+            }
+
+            a:hover{
+                color: #FFBD24;
+            }
+        }
+
+        li {
+            @media(max-width:920px) {
+                display: none;
+                
+            }
+        }
+
+        li.selected {
+
+            @media(max-width:920px) {
+                display: flex;
+                
+            }
+
+            a {
+               
+                border-bottom: 10px solid currentColor;
+                @media(max-width:920px) {
+                    border: none;
+                    
+                }
+            }
+        }
+
+
+
+        a{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 2.4rem;
+
+            text-decoration: none;
+            color: $light-white;
+
+           
+
+            
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

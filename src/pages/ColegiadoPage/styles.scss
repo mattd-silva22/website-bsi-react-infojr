@@ -1,0 +1,242 @@
+#colegiado-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}
+
+
+
+#colegiado-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    
+
+    
+
+    #colegiado-page-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-direction: column;
+        width: 90%;
+        max-width: 1280px;
+
+        gap: 5.0rem;
+
+        padding-bottom: 15.0rem;
+
+        @media(max-width:880px){
+            gap: 5.0rem;
+            
+        }
+
+       
+
+        #colegiado-title {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            
+
+            color: #00607A;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 4.8rem;
+            padding: 6.0rem 0;
+
+            
+
+        }
+
+        #colegiado-info-area {
+            display: flex;
+            align-items: flex-start;
+            @media(max-width:1280px) {
+                align-items: center;
+            }
+
+            flex-direction: column;
+
+            gap: 5.0rem;
+        }
+
+        #staff-top-area {
+            display: flex;
+            align-items:center;
+            justify-content: space-between;
+            width: 63%;
+
+            
+
+            
+            
+
+            
+
+            
+
+            @media(max-width:1280px) {
+                flex-direction: column;
+                width: 100%;
+                gap: 9.6rem;
+            }
+
+            nav {
+                display: flex;
+
+                flex-direction: column;
+
+                align-items: center;
+                justify-content: center;
+                border: 1px solid black;
+
+                padding: 3.0rem 1.3rem;
+                @media(max-width:600px) {
+                    padding: 1.5rem 1.3rem;
+                }
+                gap: 2.4rem;
+
+                
+
+                //display: none;
+
+                h1{
+                    color: #00607A;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 700;
+                    font-size: 2.4rem;
+                }
+
+                ul {
+                    list-style: none;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.2rem;
+                    align-items: flex-end;
+                   
+
+                    li {
+                        display: flex;
+                        align-items: center;
+                        justify-content:   center;
+                        gap: 0.5rem;
+
+                        
+
+                        
+                        img {
+                            display: none;
+                        }
+                        p {
+                            color:#000;
+                            font-family: 'Roboto', sans-serif;
+                            font-weight: 700;
+                            font-size: 1.8rem; 
+                        }
+
+                        &.selected {
+                            img {
+                                display: inline;
+                            }
+
+                            p {
+                                color: #00607A;
+                            }
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                        
+                    }
+
+                    
+                }
+            }
+            
+        }
+        .main-staff{
+            gap: 5.0rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            @media(max-width:880px){
+                
+            }
+            
+        }
+
+        .staff-title-center{
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 3.6rem;
+            color: #4B4B4B;
+        }
+
+        .staff-title-left {
+            display: flex;
+            width: 100%;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            font-size: 3.6rem;
+            font-family: Roboto;
+            font-size: 24px;
+            color: #4B4B4B;
+
+
+
+            
+
+            @media(max-width:1280px) {
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        .staff-row {
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+
+            @media(max-width:1280px) {
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+               
+            }
+
+            @media(max-width:880px){
+                gap: 2.5rem;
+                margin-bottom: 10.0rem;
+            }
+        }
+
+        .staff-row-section{
+            display: flex;
+            flex-direction: row;
+
+            @media(max-width:880px){
+                gap: 2.6rem;
+            }
+
+            @media(max-width:450px){
+                gap: 2.5rem;
+                flex-direction: column;
+            }
+            
+            
+        }
+    }
+}

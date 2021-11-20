@@ -1,0 +1,111 @@
+@import"./variables.scss";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 3.6rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+label {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+a {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+button {
+    cursor: pointer;
+    margin-top: 2.5rem;
+    width: 290px;
+    padding: 2.1rem 9.8rem;
+    background-color: #414C4F;
+    color: #F3F4F4;
+    border-radius: 15px;
+    font: 2.4rem;
+    font-weight: 700;
+    border: none;
+}
+
+button:hover {
+    background-color: #00BFF2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 3.6rem;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    h3 {
+        font-size: 2.4rem;
+    }
+    
+    h4 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    
+    h5 {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
+    button {
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+} 
+
+@media (max-width:920px) {
+    body.scrollock {
+        height: 100%;
+        overflow: hidden;
+    }
+}
