@@ -3,6 +3,7 @@ import facebookIcon from "../../assets/icons/face.svg";
 import instagramIcon from "../../assets/icons/insta.svg";
 import youtubeIcon from "../../assets/icons/yb.svg";
 import logo from "../../assets/logo-white.png";
+import {Link} from "react-router-dom";
 
 export function Footer(){
     const today = new Date();
@@ -34,7 +35,9 @@ export function Footer(){
                 </div>
                 <div className="copy">
                     <div className="logo">
-                        <img src={logo} alt="" />
+                        <Link to="/"> 
+                            <img src={logo}/>
+                        </Link>
                         <p>Sistemas da<br></br> Informação</p>
                     </div>
                     <p>Todos os direitos reservados, {today.getFullYear()}</p>
