@@ -39,8 +39,10 @@ export function ContatoPage() {
         };
 
 
-        api.post('/send', userData).then(function (res) {
+        api.post('/send', userData).then( res => {
+            if(res.statusCode = 200) {
             alert('Menssagem recebida pelo nosso servidor ! obrigado pelo contato')
+            }
         })
         .catch(err => {
             alert(err);
