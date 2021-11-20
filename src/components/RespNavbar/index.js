@@ -80,15 +80,15 @@ export  function RespNavbar(props){
 
                 <div id="social-midia-bar">
 
-                    <a>
+                    <a  href="https://www.facebook.com/computacaoufba/">
                         <img src={facebookIcon}/>
                     </a>
 
-                    <a>
+                    <a href="https://www.instagram.com/computacaoufba/">
                         <img src={instagramIcon}/>
                     </a>
 
-                    <a>
+                    <a href="https://www.youtube.com/channel/UCU6wWvDsc1FaXJRGoaNHwow">
                         <img src={youtubeIcon}/>
                     </a>
                 </div>
